@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "outfit";
+    src: url(./assets/Outfit-VariableFont_wght.ttf);
+}
+
+html{
+    @apply bg-neutral-800 font-[outfit]
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+.custom-checkbox {
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    @apply appearance-none bg-white border-2 border-amber-400 w-4 aspect-square rounded;
+  }
+  
+  .custom-checkbox:checked {
+    @apply bg-amber-400 border-none
+  }
+  
+  
